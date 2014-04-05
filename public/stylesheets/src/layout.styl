@@ -1,0 +1,22 @@
+@import 'mixins'
+@import 'variables'
+
+
+/***************** 
+Grid
+*****************/
+
+.grid-container 
+	marginCenter()
+
+	// No specified width on extra small or small screens
+
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+		width $container-md
+
+	@media (min-width: $screen-lg-min) and (max-width: $screen-lg-max)
+		width $container-lg
+
+	@media (min-width: $screen-xl-min)
+		width $container-lg
+

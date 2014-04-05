@@ -1,0 +1,1 @@
+.grid-container{margin-left:auto;margin-right:auto;}@media (min-width: $screen-md-min) and (max-width: $screen-md-max){.grid-container{width:750px}}@media (min-width: $screen-lg-min) and (max-width: $screen-lg-max){.grid-container{width:1000px}}@media (min-width: $screen-xl-min){.grid-container{width:1000px}}
