@@ -1,15 +1,39 @@
-/***************** 
-Flexbox mixins
-*****************/
+@import 'variables'
 
-display()
+/***************************
+Flexbox mixins
+****************************/
+
+displayFlex()
 	display flex 
 	display -webkit-flex
 
+rowWrap()
+	flex-flow row wrap
+	-webkit-flex-flow row wrap
 
-/***************** 
+flexEr(flexGrow, flexShrink, flexBasis)
+	flex flexGrow flexShrink flexBasis
+	-webkit-flex flexGrow flexShrink flexBasis
+
+/*************************** 
+Grid mixins
+***************************/
+	
+/* Generate columns */
+gridCol(padding, flexGrow, flexShrink, flexBasis)
+	hzPadding(padding)
+	flexEr(flexGrow, flexShrink, flexBasis)
+
+/* Generate a custom container */
+customContainer(padding, width)
+	marginCenter()
+	hzPadding(padding)
+	width width
+
+/*************************** 
 Positioning mixins
-*****************/
+****************************/
 
 /*
 Center block level elements setting margin right / left to auto
@@ -17,4 +41,13 @@ Center block level elements setting margin right / left to auto
 marginCenter()
 	margin-left auto
 	margin-right auto
+
+/* Adds */
+hzPadding(padding)
+	padding-left padding
+	padding-right padding
+
+
+	
+
 	

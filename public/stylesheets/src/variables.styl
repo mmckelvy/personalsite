@@ -1,39 +1,43 @@
-/***************** 
+/**************************** 
 Media query variables
-*****************/
+****************************/
 
 /*
 Note that default styles are mobile first (i.e. assume a 320px width device)
 */
 
 /* Phones */
-$screen-xs-max = 320px
+$screen-xs = '(max-width:' + 320 + 'px)'
 
 /* iPads, tablets */
-$screen-sm-min = 321px
-$screen-sm-max = 768px
+$screen-sm = '(min-width:' + 321 + 'px) and (max-width:' + 768 + 'px)'
 
 /* Small laptops, larger tablets */
-$screen-md-min = 769px
-$screen-md-max = 1024px
+$screen-md = '(min-width:' + 769 + 'px) and (max-width:' + 1024 + 'px)'
 
 /* Laptops */
-$screen-lg-min = 1025px
-$screen-lg-max = 1280px
+$screen-lg = '(min-width:' + 1025 + 'px) and (max-width:' + 1280 + 'px)'
 
-/* Desktops */
-$screen-xl-min = 1281px
+/* Large Desktops */
+$screen-xl = '(min-width:' + 1281 + 'px)'
 
-/***************** 
+
+/**************************** 
 Fonts
-*****************/
+*****************************/
 
 $mainfont = font-family "Helvetica Neue", Helvetica, Arial, sans-serif
 
-/***************** 
+/**************************** 
 Positioning and layout
-*****************/
+*****************************/
 
+/* Container */
 $container-md = 750px
 $container-lg = 1000px
 $container-xl = 1250px
+
+$container-padding = 15px
+
+/* Columns */
+$col-padding = 15px

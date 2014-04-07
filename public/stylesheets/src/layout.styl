@@ -2,21 +2,33 @@
 @import 'variables'
 
 
-/***************** 
+/************************** 
 Grid
-*****************/
+***************************/
 
 .grid-container 
 	marginCenter()
+	hzPadding($container-padding) 
 
 	// No specified width on extra small or small screens
 
-	@media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+	@media $screen-md
 		width $container-md
 
-	@media (min-width: $screen-lg-min) and (max-width: $screen-lg-max)
+	@media $screen-lg
 		width $container-lg
 
-	@media (min-width: $screen-xl-min)
-		width $container-lg
+	@media $screen-xl
+		width $container-xl
+
+.grid-row
+	displayFlex()
+	rowWrap()
+	width 100%
+	margin-left -$containerPadding
+	margin-right -$containerPadding
+
+/* Mobile column */
+.grid-col-xs
+	gridCol($col-padding, 1, 1, 100%)
 
