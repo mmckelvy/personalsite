@@ -23,18 +23,23 @@ Grid
 
 .grid-row
 	displayFlex()
-	rowWrap()
-	width 100%
 	margin-left $row-neg-margin
 	margin-right $row-neg-margin
 
-/* Mobile column full-screen -- number suffix represents % of row */
-.grid-col-xs-30
-	gridCol($col-padding, 1, 1, 10%)
-	background-color yellow
-	min-height 200px
-	border 1px solid orange
+/************************** 
+Margins
+***************************/
 
 
+
+/************************** 
+Flex
+***************************/
+
+.flex-container
+	displayFlex()
+
+.flex-hz-center
+	flexHzCenter()
 	
 
