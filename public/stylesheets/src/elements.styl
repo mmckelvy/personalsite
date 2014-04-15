@@ -1,19 +1,19 @@
 @import 'variables'
 @import 'mixins'
 
-.main-header
-	font-size 34px
+.navbar
+	displayFlex()
+	flexHzRight()
+	flexVtCenter()
+	height 50px
+
+.nav-item
+	color $darkgrey
 	font-weight 100
-	letter-spacing 5px
-	hzPadding(10px)
-	margin-top 15px
-	margin-bottom 15px
+	letter-spacing 2px
+	padding-right 25px
+	padding-left 25px
+	text-decoration none
 
-	@media $screen-md
-		font-size 48px
-
-	@media $screen-lg
-		font-size 60px
-
-	@media $screen-xl
-		font-size 60px
+.nav-item:hover
+	color #97e693
