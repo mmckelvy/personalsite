@@ -2,16 +2,13 @@
 @import 'variables'
 
 
-/************************** 
-Grid
-***************************/
+/*********** Grid *************/
 
 .grid-container 
 	marginCenter()
 	hzPadding($container-padding) 
 
 	// No specified width on extra small or small screens
-
 	@media $screen-md
 		width $container-md
 
@@ -26,16 +23,27 @@ Grid
 	margin-left $row-neg-margin
 	margin-right $row-neg-margin
 
-/************************** 
-Margins
-***************************/
+/********* Positioning **********/
 
 
+.text-center
+	text-align center
 
-/************************** 
-Flex
-***************************/
+/********* Margins **********/
+.margin-top-20
+	margin-top 20px
 
+.margin-bottom-20
+	margin-bottom 20px
+
+/********* Padding **********/
+.padding-top-20
+	padding-top 20px
+
+.padding-bottom-20
+	padding-bottom 20px
+
+/******* Flex ********/
 .flex-container
 	displayFlex()
 

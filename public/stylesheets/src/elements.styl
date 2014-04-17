@@ -1,14 +1,16 @@
 @import 'variables'
 @import 'mixins'
 
+/******* Navigation *******/
 .navbar
 	displayFlex()
 	flexHzRight()
 	flexVtCenter()
 	height 50px
+	background-color #000000
 
 .nav-item
-	color $darkgrey
+	color #fff
 	font-weight 100
 	letter-spacing 2px
 	padding-right 25px
@@ -16,8 +18,18 @@
 	text-decoration none
 
 .nav-item:hover
-	color #97e693
+	color $softgreen
 
 .hero-image
 	width 100%
 	height auto
+
+.about-container
+	displayFlex()
+
+.about-box
+	flexEr(1, 1, 33.333%)
+	height 200px
+	margin 3px
+	background-color $darkgrey	
+	

@@ -4,6 +4,10 @@ html
 		title Mark McKelvy
 		meta(charset='utf-8')
 		meta(name="viewport" content="width=device-width, initial-scale=1")
+		//- Vendor stylesheets
+		link(rel='stylesheet', href='/stylesheets/lib/normalize.css')
+
+		//- User stylesheets
 		link(rel='stylesheet', href='/stylesheets/lib/base.css')
 		link(rel='stylesheet', href='/stylesheets/lib/elements.css')
 		link(rel='stylesheet', href='/stylesheets/lib/layout.css')
@@ -14,8 +18,18 @@ html
 		div.navbar
 			a.nav-item(href="#") About
 			a.nav-item(href="#") Work
-			a.nav-item(href="#") Blog
+			a.nav-item(href="#") Thoughts
 
 		//- Hero image
 		div.hero-container
 			img.hero-image(src='images/placeholder.jpg')
+
+		div.grid-container
+			h3.sub-headers.text-center.margin-top-20.margin-bottom-20.padding-bottom-20.border-bottom-grey About
+			div.about-container
+				div.about-box
+				div.about-box
+				div.about-box
+
+			div.work-container
+
