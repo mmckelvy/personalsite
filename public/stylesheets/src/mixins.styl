@@ -1,8 +1,6 @@
 @import 'variables'
 
-/***************************
-Flexbox mixins
-****************************/
+/*********** Flexbox mixins ***********/
 
 displayFlex()
 	display flex 
@@ -28,29 +26,27 @@ flexVtCenter()
 	align-items center
 	-webkit-align-items center	
 
-
-/*************************** 
-Grid mixins
-***************************/
+/********** Grid mixins ***********/
 	
-/* Generate columns */
-gridCol(padding, flexGrow, flexShrink, flexBasis)
-	hzPadding(padding)
-	flexEr(flexGrow, flexShrink, flexBasis)
-
-/* Generate a custom container */
+// Generate a custom container 
 customContainer(padding, width)
 	marginCenter()
 	hzPadding(padding)
 	width width
 
-/*************************** 
-Positioning mixins
-****************************/
+// Generate columns
+gridCol(padding, flexGrow, flexShrink, flexBasis)
+	hzPadding(padding)
+	flexEr(flexGrow, flexShrink, flexBasis)
 
-/*
-Center block level elements setting margin right / left to auto
-*/
+// Generate rows
+gridRow(margin)
+	margin-left margin
+	margin-right margin
+
+/*********** Positioning mixins ***********/
+
+// Center block level elements setting margin right / left to auto
 marginCenter()
 	margin-left auto
 	margin-right auto
@@ -59,15 +55,12 @@ hzPadding(padding)
 	padding-left padding
 	padding-right padding
 
-/*************************** 
-Font mixins
-****************************/
-	
-/*************************** 
-Border mixins
-****************************/
-
-
+/*********** Element mixins ***********/
+backgrounds(url, horizontal, vertical, width, height, repeat)
+	background-image url(url)
+	background-position horizontal vertical
+	background-size width height
+	background-repeat repeat
 
 
 
