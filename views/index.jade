@@ -1,52 +1,32 @@
-doctype html
-html
-	head
-		title Mark McKelvy
-		meta(charset='utf-8')
-		meta(name="viewport" content="width=device-width, initial-scale=1")
-		//- Vendor stylesheets
-		link(rel='stylesheet', href='/stylesheets/lib/normalize.css')
+include includes/header
 
-		//- User stylesheets
-		link(rel='stylesheet', href='/stylesheets/lib/base.css')
-		link(rel='stylesheet', href='/stylesheets/lib/elements.css')
-		link(rel='stylesheet', href='/stylesheets/lib/layout.css')
+//- Hero image
+div.hero-container
+	img.hero-image(src='images/placeholder.jpg')
 
+div.grid-container
+	h3.sub-headers.text-center.margin-top-50.margin-bottom-20.padding-bottom-20.border-bottom-grey About
+	div.row-5
+		//- About boxes
+		div.flex-container
+			div.flip-container.flex-items-3.about-box // Houses the 3D space.  This takes the flex positioning.
+				div.flip-wrapper // flip-wrapperr for front and back 3D object.
+					div.flip-content.flip-front FRONT
+					div.flip-conent.flip-back BACK
 
-	body
-		//- Navigation
-		div.navbar
-			a.nav-item(href="#") About
-			a.nav-item(href="#") Work
-			a.nav-item(href="#") Thoughts
+			div.flip-container.flex-items-3.about-box // Houses the 3D space.  This takes the flex positioning.
+				div.flip-wrapper // Wrapper for front and back 3D object.
+					div.flip-front FRONT 
+					div.flip-back BACK
 
-		//- Hero image
-		div.hero-container
-			img.hero-image(src='images/placeholder.jpg')
-
-		div.grid-container
-			h3.sub-headers.text-center.margin-top-50.margin-bottom-20.padding-bottom-20.border-bottom-grey About
-			div.row-5
-				//- About boxes
-				div.flex-container
-					div.flip-container.flex-items-3.about-box // Houses the 3D space.  This takes the flex positioning.
-						div.flip-wrapper // flip-wrapperr for front and back 3D object.
-							div.flip-content.flip-front FRONT
-							div.flip-conent.flip-back BACK
-
-					div.flip-container.flex-items-3.about-box // Houses the 3D space.  This takes the flex positioning.
-						div.flip-wrapper // Wrapper for front and back 3D object.
-							div.flip-front FRONT 
-							div.flip-back BACK
-
-					div.flip-container.flex-items-3.about-box // Houses the 3D space.  This takes the flex positioning.
-						div.flip-wrapper // Wrapper for front and back 3D object.
-							div.flip-front FRONT 
-							div.flip-back BACK
+			div.flip-container.flex-items-3.about-box // Houses the 3D space.  This takes the flex positioning.
+				div.flip-wrapper // Wrapper for front and back 3D object.
+					div.flip-front FRONT 
+					div.flip-back BACK
+			
 					
-							
-							
+					
 
 
-			div.work-container
+	div.work-container
 
