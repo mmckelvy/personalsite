@@ -1,56 +1,26 @@
 @import 'variables'
 @import 'mixins'
 
-/******* Navigation *******/
+/**
+* Navigation
+**/
+
 .navbar
-	displayFlex()
-	flexHzRight()
-	flexVtCenter()
-	height 50px
-	background-color #000000
+	height: 100px
+	padding: 20px 30px
 
-.nav-item
-	color #fff
-	font-weight 100
-	letter-spacing 2px
-	padding-right 25px
+.nav-wrapper
+	float: right
+
+.nav-list li
+	display: inline-block
 	padding-left 25px
-	text-decoration none
-
-.nav-item:hover
-	color $softgreen
-
-.hero-image
-	width 100%
-	height auto
-
-.flip-container
-	position relative
-	perspective 300px
-
-.flip-wrapper
-	width 100%
-	height 100%
-	position absolute
-	transform-style preserve-3d
-	transition transform 1s
-
-.flip-content
-	display block
-	position absolute
-	width 100%
-	height 100%
-	backface-visibility hidden
-		
-
-
-
+	font-weight 100
+	letter-spacing 3px
 	
-.about-box-1
-	backgrounds('/images/aboutplace1.jpg', 50%, 50%, 100%, 100%, no-repeat)
+	& a
+		text-decoration: none
 
-.about-box-2
-	backgrounds('/images/aboutplace2.jpg', 50%, 50%, 100%, 100%, no-repeat)
-
-.about-box-3
-	backgrounds('/images/aboutplace3.jpg', 50%, 50%, 100%, 100%, no-repeat)
+		&:hover
+			color $softgreen
+					

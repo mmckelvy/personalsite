@@ -1,6 +1,8 @@
 @import 'variables'
 
-/*********** Flexbox mixins ***********/
+/** 
+* Flexbox mixins
+**/
 
 displayFlex()
 	display flex 
@@ -27,20 +29,51 @@ flexVtCenter()
 	-webkit-align-items center	
 
 
-
-
-/********** Grid mixins ***********/
+/**
+* Grid mixins
+**/
 	
-// Generate a custom container 
-customContainer(padding, width)
-	marginCenter()
-	hzPadding(padding)
-	width width
+/*
+@function: createContainer.
+@description: Creates containers.
+@param: padding is the padding on the right AND left.
+@param: width-* is the pixel width of the parent container.  xs, sm, md, etc. are screen sizes.  Will use the next smallest screen size if an arg is omitted (e.g. if you use just pass '1024px' then all screens will have a 1024px width for the container).
+*/ 
+createContainer(padding = $primary-padding, width-xs, width-sm = width-xs, width-md = width-sm, width-md = width-sm, width-lg = width-md, width-xl = width-lg)
+	
+	width: width-xs
+	blockCenter()
+	padding-left: padding
+	padding-right: padding
 
+	@media $screen-sm-min
+		width: width-sm
+
+	@media $screen-md-min
+		width: width-md
+
+	@media $screen-lg-min
+		width: width-lg
+
+	@media $screen-xl-min
+		width: width-xl
+
+/*
+@function: createRow.
+@description: Creates rows.
+@param: margin is the negative margin on the right and left.  Prevents double padding on beginning and ending columns.
+*/
 createRow( margin = - ($primary-padding) )
 	margin-left: margin
 	margin-right: margin
 	clearfix()
+
+/*
+@function: createColumn
+@description: Creates columns.
+@param: padding is the padding on the right AND left.  Thus gutters will be equal to 2x padding.
+@param: pct-* is the percent width of the parent container.  xs, sm, md, etc. are screen sizes.  Will use the next smallest screen size if an arg is omitted (e.g. if you use just pass '30%' then all screens will have a 30% width for the column)
+*/
 
 createColumn(padding = $primary-padding, pct-xs, pct-sm = pct-xs, pct-md = pct-sm, pct-lg = pct-md, pct-xl = pct-lg)
 	width: pct-xs // Widths are percentages of the parent element.

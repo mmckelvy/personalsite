@@ -2,31 +2,30 @@
 @import 'variables'
 
 
-/*********** Grid *************/
+/**
+* Grid
+**/
 
-.grid-container 
-	marginCenter()
-	hzPadding($container-padding) 
+.main-container 
+	createContainer($primary-padding, auto, auto, $container-md, $container-lg, $container-xl)
 
-	// No specified width on extra small or small screens
-	@media $screen-md
-		width $container-md
+.main-row
+	createRow($primary-padding)
 
-	@media $screen-lg
-		width $container-lg
+.col-100
+	createColumn($primary-padding, 100%)
 
-	@media $screen-xl
-		width $container-xl
-
-.row-5
-	gridRow(-5px)
-
-/********* Positioning **********/
+/**
+* Positioning
+**/
 
 .text-center
 	text-align center
 
-/********* Margins **********/
+/**
+* Margins
+**/
+
 .margin-top-50
 	margin-top 50px
 
@@ -39,14 +38,20 @@
 .margin-bottom-20
 	margin-bottom 20px
 
-/********* Padding **********/
+/**
+* Padding
+**/
+
 .padding-top-20
 	padding-top 20px
 
 .padding-bottom-20
 	padding-bottom 20px
 
-/******* Flex ********/
+/**
+* Flex
+**/
+
 .flex-container
 	displayFlex()
 
