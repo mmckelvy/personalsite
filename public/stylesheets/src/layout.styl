@@ -6,14 +6,20 @@
 * Grid
 **/
 
+/* Containers */
 .main-container 
 	createContainer($primary-padding, auto, auto, $container-md, $container-lg, $container-xl)
 
+/* Rows */
 .main-row
 	createRow($primary-padding)
 
+/* Columns */
 .col-100
 	createColumn($primary-padding, 100%)
+
+.col-50
+	createColumn($primary-padding, 50%)
 
 /**
 * Positioning
@@ -25,18 +31,24 @@
 /**
 * Margins
 **/
-
-.margin-top-50
-	margin-top 50px
+.margin-bottom-100
+	margin-bottom: 100px
 
 .margin-bottom-50
 	margin-bottom 50px
 
+.margin-bottom-20
+	margin-bottom 20px
+
+.margin-bottom-10
+	margin-bottom 10px
+
+.margin-top-50
+	margin-top 50px
+
 .margin-top-20
 	margin-top 20px
 
-.margin-bottom-20
-	margin-bottom 20px
 
 /**
 * Padding
@@ -48,16 +60,5 @@
 .padding-bottom-20
 	padding-bottom 20px
 
-/**
-* Flex
-**/
 
-.flex-container
-	displayFlex()
-
-.flex-hz-center
-	flexHzCenter()
-	
-.flex-items-3
-	flexEr(1, 1, (1/3))
 

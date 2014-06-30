@@ -1,5 +1,6 @@
 @import 'variables'
 @import 'mixins'
+@import 'base'
 
 /**
 * Navigation
@@ -12,15 +13,24 @@
 .nav-wrapper
 	float: right
 
-.nav-list li
-	display: inline-block
-	padding-left 25px
-	font-weight 100
-	letter-spacing 3px
-	
-	& a
-		text-decoration: none
+.nav-list > li > a
+	font-size: 60px
+	font-weight: 100
+	color: $grey
+	text-decoration: none
 
-		&:hover
-			color $softgreen
+	&:hover
+		color $softgreen
 					
+/**
+* Main section
+**/
+
+.main-header
+	@extend .section-header
+
+	color: $black
+	text-align: center
+	padding-bottom: 20px
+	border-bottom: 1px solid $black
+

@@ -42,7 +42,7 @@ flexVtCenter()
 createContainer(padding = $primary-padding, width-xs, width-sm = width-xs, width-md = width-sm, width-md = width-sm, width-lg = width-md, width-xl = width-lg)
 	
 	width: width-xs
-	blockCenter()
+	marginCenter()
 	padding-left: padding
 	padding-right: padding
 
@@ -122,7 +122,13 @@ backgrounds(url, horizontal, vertical, width, height, repeat)
 	background-size width height
 	background-repeat repeat
 
-
+background-linear-gradient(startPoint, startColor, startInterval, endColor, endInterval)
+	background-color startColor
+	background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
 
 
 
