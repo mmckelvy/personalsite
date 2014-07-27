@@ -2,6 +2,11 @@
 Stylesheet aggregator and entry point.
 **/
 
-@import 'base'
-@import 'layout'
-@import 'elements'
+// Base dependencies
+@require 'variables'
+@require 'mixins'
+
+// Core stylesheets
+@require 'base'
+@require 'layout'
+@require 'modules'

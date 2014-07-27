@@ -1,0 +1,1 @@
+.navbar{height:75px;position:relative}.nav-wrapper{position:absolute;right:20px;bottom:0;padding-bottom:20px}.nav-list li{display:inline-block;padding-right:20px;font-size:20px;font-weight:100;letter-spacing:5px;color:$black;}.nav-list li:last-of-type{padding-right:0}.nav-list li a{text-decoration:none;}.nav-list li a:hover{color:$softgreen}.headline{width:100%;height:1500px;}

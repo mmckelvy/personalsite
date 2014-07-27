@@ -1,5 +1,7 @@
-@import 'mixins'
-@import 'variables'
+/**
+* LAYOUT
+* For positioning elements.
+**/
 
 
 /**
@@ -22,15 +24,20 @@
 	createColumn($primary-padding, 50%)
 
 /**
-* Positioning
+* Alignment
 **/
 
-.text-center
+.inline-hz-center
 	text-align center
+
+.block-hz-center
+	marginCenter()
 
 /**
 * Margins
 **/
+
+// Bottom margins
 .margin-bottom-100
 	margin-bottom: 100px
 
@@ -43,6 +50,7 @@
 .margin-bottom-10
 	margin-bottom 10px
 
+// Top margins
 .margin-top-50
 	margin-top 50px
 
@@ -54,11 +62,14 @@
 * Padding
 **/
 
+// Bottom padding
+.padding-bottom-20
+	padding-bottom 20px
+
+// Top padding
 .padding-top-20
 	padding-top 20px
 
-.padding-bottom-20
-	padding-bottom 20px
 
 
 
