@@ -9,25 +9,25 @@
 **/
 
 /* Containers */
+.site-header-container
+	createContainer(0, auto, 90%)
+
 .main-container 
 	createContainer($primary-padding, auto, auto, $container-md, $container-lg, $container-xl)
 
 /* Rows */
+.header-row
+	createRow(0)
+
 .main-row
 	createRow($primary-padding)
 
 /* Columns */
-.col-100
-	createColumn($primary-padding, 100%)
+.header-col-100
+	createColumn(0, 100%)
 
-.col-70
-	createColumn($primary-padding, 70%)
-
-.col-50
-	createColumn($primary-padding, 50%)
-
-.col-30
-	createColumn($primary-padding, 30%)
+.header-col-33
+	createColumn(0, 33.333333%)
 
 /**
 * Alignment
@@ -39,49 +39,9 @@
 .block-hz-center
 	marginCenter()
 
-.absolute-position
-	position: absolute
-
-.relative-position
-	position: relative
-
-/**
-* Margins
-**/
-
-// Bottom margins
-.margin-bottom-100
-	margin-bottom: 100px
-
-.margin-bottom-50
-	margin-bottom 50px
-
-.margin-bottom-20
-	margin-bottom 20px
-
-.margin-bottom-10
-	margin-bottom 10px
-
-// Top margins
-.margin-top-50
-	margin-top 50px
-
-.margin-top-20
-	margin-top 20px
-
-
 /**
 * Padding
 **/
 
-// Bottom padding
-.padding-bottom-20
-	padding-bottom 20px
-
-// Top padding
-.padding-top-20
-	padding-top 20px
-
-
-
-
+.padding-top-100
+	padding-top: 100px
