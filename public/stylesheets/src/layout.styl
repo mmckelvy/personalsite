@@ -12,8 +12,8 @@
 .site-header-container
 	createContainer(0, auto, 90%)
 
-.main-container 
-	createContainer($primary-padding, auto, auto, $container-md, $container-lg, $container-xl)
+.main-container
+	createContainer($primary-padding, auto, auto, 750px, 1024px, 1250px)
 
 /* Rows */
 .header-row
@@ -31,6 +31,9 @@
 
 .header-col-67
 	createColumn(0, 66.6666661%)
+
+.main-col-100
+	createColumn($primary-padding, 100%)
 
 /**
 * Alignment
@@ -52,11 +55,20 @@
 .padding-top-100
 	padding-top: 100px
 
+/**
+* Margin
+**/
+
+// Bottom margins
 .margin-bottom-30
 	margin-bottom: 30px
 
 .margin-bottom-60
 	margin-bottom: 60px
 
+.margin-bottom-22
+	margin-bottom: 22px
+
 .margin-left-33pct
 	margin-left: 33.33333%
+
