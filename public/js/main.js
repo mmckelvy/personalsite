@@ -2,25 +2,43 @@
 	
 	$(function () {
 		
+		
+		
 		/**
-		* UI Style functions.
+		* EVENTS
 		**/
 
-		/* UI changes for nav links. */
 		$('.nav-list').on('click', 'a', function (e) {
-			
-			// Get the appropriate section attribute.
-			selectedSection = $(this).attr('data-section');
 			// Change color of nav links.
 			$('.nav-item-link').removeClass('nav-item-active');
 			$(this).addClass('nav-item-active');
 			
-			// Clear previously shown content.  Show appropriate content.
-			$('.content-block').removeClass('animated')
-			$('.' + selectedSection).addClass('animated');
+			// Show appropriate content.
+			var selectedSection = $(this).attr('data-section');
+			showContent(selectedSection);
 
 		});
 
+
+		/**
+		* UI FUNCTIONS
+		**/
+		
+		/*
+		* function: showContent
+		* description: shows the appropriate content block based on the clicked navigation link. 
+		* @param: section.  This is the name of the section the user selected.  Passed in from event handler. 
+		*/
+
+		function showContent (section) {
+			// Need something to clear out all previous content.
+			
+			var selector = '.' + section;
+
+			
+			
+		};
+		// Going to need the correct data attribute (which means I will need the clicked element).
 
 
 	}); // End jQuery document ready.
