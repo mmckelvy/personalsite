@@ -31,11 +31,20 @@
 		*/
 
 		function showContent (section) {
-			// Need something to clear out all previous content.
+			// Revert opacity and height settings.
+			$('.content-block').css({
+				'opacity': 0,
+				'height': 0
+			});
 			
-			var selector = '.' + section;
+			var $contentEl = $('.' + section);
+			var currentHeight = $contentEl.height(); // Get initial height.
+			
+			$contentEl.css('height', 'auto'); // Set the height to auto to get auto height.
+			var autoHeight = $contentEl.height(); // Get the auto setting height.
 
-			
+			$contentEl.height(currentHeight); // Restore height back to current height (0).
+			$contentEl.animate({height: autoHeight, opacity: 1}, 1000); // Animate the height and opacity.
 			
 		};
 		// Going to need the correct data attribute (which means I will need the clicked element).
