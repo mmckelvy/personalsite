@@ -29,18 +29,24 @@
 		*/
 
 		function showContent (section) {
-			// Revert opacity and height settings.
+			// Revert opacity and height settings and hide the elements.
 			$('.content-block').css({
-				'height': 0
+				'height': 0,
+				'display': 'none'
 			});
 
 			$('.content-text').css({
-				'opacity': 0
+				'opacity': 0,
+				'display': 'none'
 			});
 			
 			// Select appropriate elements.
 			var $contentEl = $('.' + section);
 			var $contentText = $contentEl.find('.content-text');
+
+			// Set display to visible.
+			$contentEl.css('display', 'block');
+			$contentText.css('display', 'block');
 
 			// Height processing.
 			var currentHeight = $contentEl.height(); // Get initial height.
