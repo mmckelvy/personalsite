@@ -2,8 +2,6 @@
 	
 	$(function () {
 		
-		
-		
 		/**
 		* EVENTS
 		**/
@@ -33,21 +31,31 @@
 		function showContent (section) {
 			// Revert opacity and height settings.
 			$('.content-block').css({
-				'opacity': 0,
 				'height': 0
 			});
+
+			$('.content-text').css({
+				'opacity': 0
+			});
 			
+			// Select appropriate elements.
 			var $contentEl = $('.' + section);
+			var $contentText = $contentEl.find('.content-text');
+
+			// Height processing.
 			var currentHeight = $contentEl.height(); // Get initial height.
 			
-			$contentEl.css('height', 'auto'); // Set the height to auto to get auto height.
-			var autoHeight = $contentEl.height(); // Get the auto setting height.
+			$contentEl.css('height', 'auto'); // Set the height to auto to measure auto height dimensions.
+			var autoHeight = $contentEl.height(); // Measure the auto setting height.
 
 			$contentEl.height(currentHeight); // Restore height back to current height (0).
-			$contentEl.animate({height: autoHeight, opacity: 1}, 1000); // Animate the height and opacity.
+			
+			// Animate the height and opacity.
+			$contentEl.animate({height: autoHeight}, 1000, function() {
+				$contentText.animate({opacity: 1}, 1000);
+			});
 			
 		};
-		// Going to need the correct data attribute (which means I will need the clicked element).
 
 
 	}); // End jQuery document ready.
