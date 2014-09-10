@@ -57,7 +57,7 @@
 			$contentEl.height(currentHeight); // Restore height back to current height (0).
 			
 			// Animate the height and opacity.
-			$contentEl.animate({height: autoHeight}, 1000, function() {
+			$contentEl.animate({height: autoHeight}, 500, function() {
 				$contentText.animate({opacity: 1}, 1000);
 			});
 			
