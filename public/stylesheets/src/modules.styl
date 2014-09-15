@@ -70,7 +70,40 @@
 
 .portfolio-item
 	width: 100%
-	height: 500px
+	height: $portfolio-height
 	border: 1px solid $grey
 	display: inline-block
+	position: relative
+	z-index: 2
+
+.portfolio-image
+	max-width: 100%
+	height: auto
+	posiiton: absolute
+	top: 0
+	left: 0
+
+.portfolio-image-fade
+	opacity: 0.1
+	z-index: 0
+
+.portfolio-description
+	width: 100%
+	height: $portfolio-height
+	opacity: 0
+	padding: 15px
+	position: absolute
+	top: 0
+	left: 0
+
+.portfolio-description-show
+	opacity: 1
+	z-index: 1
+
+.portfolio-title
+	font-size: 18px
+
+
+	
+
 
