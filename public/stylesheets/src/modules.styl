@@ -71,34 +71,36 @@
 .portfolio-item
 	width: 100%
 	height: $portfolio-height
+	perspective: 1000
 	border: 1px solid $grey
-	display: inline-block
-	position: relative
-	z-index: 2
+
+.portfolio-item:hover .portfolio-image
+	-webkit-transform: rotateY(180deg)
+	-moz-transform: rotateY(180deg)
+	-ms-transform: rotateY(180deg)
+	transform: rotateY(180deg)
 
 .portfolio-image
-	max-width: 100%
-	height: auto
-	posiiton: absolute
+	width: 100%
+	height: $portfolio-height
+	position: absolute
 	top: 0
 	left: 0
-
-.portfolio-image-fade
-	opacity: 0.1
-	z-index: 0
+	z-index: 1
+	transition: -webkit-transform 1s
+	transition: -moz-transform 1s
+	transition: -ms-transform 1s
+	transition: transform 1s
 
 .portfolio-description
 	width: 100%
 	height: $portfolio-height
 	opacity: 0
 	padding: 15px
-	position: absolute
-	top: 0
-	left: 0
+	border: 1px solid $grey
 
-.portfolio-description-show
-	opacity: 1
-	z-index: 1
+.portfolio-skoop
+	backgrounds('../../images/skoop.png', 0, 0, 100%, auto, no-repeat)
 
 .portfolio-title
 	font-size: 18px
