@@ -18,22 +18,6 @@
 
 		});
 
-		// // Portfolio hover effects
-		// $('.main-container').on('mouseenter', '.portfolio-item', function (e) {
-			
-		// 	$(this).find('.portfolio-image').addClass('portfolio-image-fade');
-		// 	$(this).find('.portfolio-description').addClass('portfolio-description-show');
-
-		// });
-
-		// $('.main-container').on('mouseout', '.portfolio-item', function (e) {
-		
-		// 	$(this).find('.portfolio-image').removeClass('portfolio-image-fade');
-		// 	$(this).find('.portfolio-description').removeClass('portfolio-description-show');
-
-		// });		
-
-
 		/**
 		* UI FUNCTIONS
 		**/
