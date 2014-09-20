@@ -15,7 +15,11 @@
 			// Show appropriate content.
 			var selectedSection = $(this).attr('data-section');
 			showContent(selectedSection);
+		});
 
+		$('.work-section').on('click', '.skoop-modal-trigger', function (e) {
+			var selectedModal = $(e.currentTarget).attr('data-modal');
+			showModal(selectedModal);
 		});
 
 		/**
@@ -60,7 +64,15 @@
 			$contentEl.animate({height: autoHeight}, 500, function() {
 				$contentText.animate({opacity: 1}, 1000);
 			});
-			
+		};
+
+		/*
+		* function: showModal
+		* description: shows a modal. 
+		* @param: section.  This is the name of the section the user selected.  Passed in from event handler. 
+		*/
+		function showModal (modalSelector) {
+			$(modalSelector).removeClass('hidden-el');
 		};
 
 
