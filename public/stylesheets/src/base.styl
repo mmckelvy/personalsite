@@ -48,10 +48,6 @@ button
 	cursor pointer
 	outline none
 
-.responsive-img
-	max-width: 100%
-	height: auto
-
 // Modals
 .modal-lightbox
 	position: fixed
@@ -64,11 +60,16 @@ button
 	z-index: 2
 
 .modal-content
-	height: auto
-	width: 75%
 	position: fixed
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%);
 	opacity: 1
+	background-color: $black
 	border: 1px solid $white
+	z-index: 3
+
+// Images
+.responsive-img
+	max-width: 100%
+	height: auto

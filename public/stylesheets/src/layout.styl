@@ -13,7 +13,7 @@
 	createContainer(0, auto, 90%)
 
 .modal-container
-	createContainer($primary-padding, auto, auto, 75%)
+	createContainer(0, auto, 75%)
 
 .main-container
 	createContainer($primary-padding, auto, auto, 750px, 1024px, 1250px)
@@ -23,7 +23,7 @@
 	createRow(0)
 
 .modal-row
-	createRow(-$primary-padding)
+	createRow(0)
 
 .main-row
 	createRow()
@@ -39,6 +39,13 @@
 
 .header-col-67
 	createColumn(0, 66.6666661%)
+
+// Modal columns
+.modal-col-75
+	createColumn(0, 75%)
+
+.modal-col-25
+	createColumn(0, 25%)
 
 // Main columns
 .main-col-100
@@ -72,6 +79,9 @@
 
 .inline-right-align
 	text-align: right
+
+.pull-right
+	float: right
 
 /**
 * Padding

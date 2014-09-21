@@ -65,9 +65,9 @@ createContainer(padding = $primary-padding, width-xs, width-sm = width-xs, width
 @description: Creates rows.
 @param: margin is the negative margin on the right and left.  Prevents double padding on beginning and ending columns.
 */
-createRow( margin = - ($primary-padding) )
-	margin-left: margin
-	margin-right: margin
+createRow(margin = $primary-padding)
+	margin-left: margin * -1
+	margin-right: margin * -1
 	clearfix()
 
 /*
