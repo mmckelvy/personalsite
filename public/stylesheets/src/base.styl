@@ -17,7 +17,9 @@ body
 	font-weight: 200
 	font-size: 14px
 
-// Resets
+/**
+* Resets
+**/
 h1,
 h2,
 h3,
@@ -25,6 +27,7 @@ h4,
 h5,
 h6
 	margin 0
+	font-weight: normal
 
 ul, ol
 	margin 0
@@ -48,28 +51,54 @@ button
 	cursor pointer
 	outline none
 
-// Modals
-.modal-lightbox
-	position: fixed
-	width: 100%
-	height: 100%
-	top: 0
-	left: 0
-	background-color: $black
-	opacity: 0.8
-	z-index: 2
+/**
+* Typography
+**/
 
-.modal-content
-	position: fixed
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%);
-	opacity: 1
-	background-color: $black
-	border: 1px solid $white
-	z-index: 3
+// Site headers
+.site-header-font
+	font-size: 24px
+	font-weight: 200
+	letter-spacing: 5px
+
+.site-subhead-font
+	font-size: 14px
+	font-weight: 200
+	letter-spacing: 3px
+
+// Generic headers
+.large-header-lite
+	font-size: 30px
+	font-weight: 100
+
+.med-header-lite
+	font-size: 18px
+	font-weight: 100
+
+.large-header-normal
+	font-size: 30px
+	font-weight: 200
+
+.med-header-normal
+	font-size: 18px
+	font-weight: 200
+
+.base-text-lite
+	font-weight: 100
+
+/**
+* Colors
+**/
+.light-grey
+	color: $lightgrey
+
+.grey
+	color: $grey
+
+
 
 // Images
 .responsive-img
 	max-width: 100%
 	height: auto
+
