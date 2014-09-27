@@ -8,7 +8,7 @@
 
 		// Main nav menu
 		$('.nav-list').on('click', 'a', function (e) {
-			// Change color of nav links.
+				// Change color of nav links.
 			$('.nav-item-link').removeClass('nav-item-active');
 			$(this).addClass('nav-item-active');
 			
@@ -17,9 +17,14 @@
 			showContent(selectedSection);
 		});
 
-		$('.work-section').on('click', '.skoop-modal-trigger', function (e) {
+		// Show modals
+		$('.work-section').on('click', '.modal-trigger', function (e) {
 			var selectedModal = $(e.currentTarget).attr('data-modal');
 			showModal(selectedModal);
+		});
+
+		$('.modal-lightbox').on('click', function (e) {
+			closeModal(e)
 		});
 
 		/**
@@ -69,11 +74,21 @@
 		/*
 		* function: showModal
 		* description: shows a modal. 
-		* @param: section.  This is the name of the section the user selected.  Passed in from event handler. 
+		* @param: modalSelector.  Passed in from event handler. 
 		*/
 		function showModal (modalSelector) {
 			$(modalSelector).removeClass('hidden-el');
 		};
+
+		/*
+		* function: closeModal
+		* description: closes modal. 
+		* @param: section.  Passed in from event handler. 
+		*/
+		function closeModal (e) {
+			$(e.currentTarget).parent().addClass('hidden-el');
+		};
+
 
 
 	}); // End jQuery document ready.
