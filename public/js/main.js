@@ -89,7 +89,9 @@
 			$(e.currentTarget).parent().addClass('hidden-el');
 		};
 
-
+		// Show about section on initial page load.
+		showContent.call(this, 'about-section');
+		$('.nav-item-link[data-section="about-section"]').addClass('nav-item-active')
 
 	}); // End jQuery document ready.
 

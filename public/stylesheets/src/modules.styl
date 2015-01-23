@@ -59,9 +59,8 @@
 
 // Flipping animation.
 .portfolio-item
-	width: 378px
+	width: 100%
 	height: $portfolio-height
-	border: 1px solid $grey
 	perspective: 1000px
 	padding: 2px
 
@@ -103,22 +102,23 @@
 
 // Portfolio background images
 .portfolio-skoop
-	backgrounds('../../images/gallery/skoop.jpg', 0, 0, 100%, auto, no-repeat)
+	// backgrounds('../../images/gallery/skoop.jpg', 0, 0, 100%, auto, no-repeat)
+	background-image: url('../../images/gallery/skoop.jpg')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
 
 .portfolio-american
-	backgrounds('../../images/gallery/mrsamerican.jpg', 0, 0, 100%, auto, no-repeat)
+	backgrounds('../../images/gallery/mrsamerican.jpg', center, cover, no-repeat)
 
 .portfolio-jae
-	backgrounds('../../images/gallery/jae.jpg', 0, 0, 100%, auto, no-repeat)
+	backgrounds('../../images/gallery/jae.jpg', center, cover, no-repeat)
 
 .portfolio-valuecreate
-	backgrounds('../../images/gallery/valuecreate.jpg', 0, 0, 100%, auto, no-repeat)
+	backgrounds('../../images/gallery/valuecreate.jpg', center, cover, no-repeat)
 
 .portfolio-powerset
-	backgrounds('../../images/gallery/powerset.png', 0, 0, 100%, auto, no-repeat)
-
-.portfolio-photoset
-	backgrounds('../../images/gallery/photoset.png', 0, 0, 100%, auto, no-repeat)
+	backgrounds('../../images/gallery/powerset.jpg', center, cover, no-repeat)
 
 // End portfolio background images
 
