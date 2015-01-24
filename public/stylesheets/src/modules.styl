@@ -7,21 +7,29 @@
 * Desktop navigation and site header
 **/
 .navbar
-	border-top: 2px solid $darkgrey
+	@media $screen-md-min
+		border-top: 2px solid $darkgrey
 
 .nav-list
-	width: 45%
-	marginCenter()
-	margin-top: -21px
-	background-color: $white
-
+	width: 100%
+	
 	li
-		display: inline-block
-		color: $darkgrey
-		height: 40px
-		line-height: 40px
-		width: 20%
+		padding: 10px 0
 		text-align: center
+		color: $darkgrey
+
+	@media $screen-md-min
+		width: 45%
+		marginCenter()
+		margin-top: -21px
+		background-color: $white
+
+		li
+			padding: 0
+			display: inline-block
+			height: 40px
+			line-height: 40px
+			width: 20%
 
 .nav-item-link
 	cursor: pointer
@@ -42,6 +50,13 @@
 	top: 10px
 	right: 10px
 
+.mobile-nav-list
+	width: 100%
+	
+	li
+		padding: 5px 0
+		text-align: center
+
 
 /**
 * Main content
@@ -61,8 +76,7 @@
 	color: $black
 
 .external-link:hover
-	color: $softgreen
-	text-decoration: underline
+	color: $grey
 
 /**
 * Portfolio section.
