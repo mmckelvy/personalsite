@@ -36,6 +36,9 @@
 
 .header-col-67
 	createColumn(0, 66.666666%)
+	
+.header-col-100-33
+	createColumn(0, 100%, 100%, 33%)
 
 // Modal columns
 .modal-col-100
@@ -62,7 +65,7 @@
 	
 .work-col-100-50-33
 	createColumn($primary-padding, 100%, 100%, 50%, 50%, 33%)
-
+	
 /**
 * Alignment
 **/
@@ -81,7 +84,7 @@
 
 .pull-right
 	float: right
-
+	
 /**
 * Padding
 **/
@@ -97,11 +100,14 @@
 .margin-bottom-60
 	margin-bottom: 60px
 
+.margin-bottom-45
+	margin-bottom: 45px
+
 .margin-bottom-30
 	margin-bottom: 30px
 
-.margin-bottom-22
-	margin-bottom: 22px
+.margin-bottom-18
+	margin-bottom: 18px
 
 .margin-bottom-15
 	margin-bottom: 15px
@@ -122,12 +128,6 @@
 .margin-right-15
 	margin-right: 15px
 
-// Conditional margins
-.margin-bottom-15-med-minus
-	margin-bottom: 15px
-	
-	@media $screen-lg
-		margin-bottom: 0 
 
 /**
 * Display management
@@ -135,6 +135,15 @@
 
 .hidden-el
 	display: none
+
+// Hide elements on mobile.
+.mobile-hidden
+	@media $screen-sm-max
+		display: none
+
+.desktop-hidden
+	@media $screen-md-min
+		display: none
 
 /**
 * Positioning
