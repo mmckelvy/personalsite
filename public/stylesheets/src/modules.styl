@@ -86,31 +86,57 @@
 .portfolio-item
 	width: 100%
 	height: $portfolio-height
+	-webkit-perspective: 1000px
 	perspective: 1000px
 	padding: 2px
 
 .portfolio-item:hover .front-panel
+	-webkit-transform: rotateY(180deg)
+	-moz-tranform: rotateY(180deg)
+	-ms-transform: rotateY(180deg)
 	transform: rotateY(180deg)
 
 .portfolio-item:hover .back-panel
+	-webkit-transform: rotateY(0)
+	-moz-tranform: rotateY(0)
+	-ms-transform: rotateY(0)
 	transform: rotateY(0)	
 
 .front-panel
 	position: absolute
 	top: 0
 	left: 0
-	transform-style: preserve-3d
+	-webkit-backface-visibility: hidden
 	backface-visibility: hidden
-	transition: -webkit-transform 1s
+	
+	-webkit-transform-style: preserve-3d
+	-moz-transform-style: preserve-3d
+	-ms-transform-style: preserve-3d
+	transform-style: preserve-3d
+	
+	-webkit-transition: -webkit-transform 1s
+	transition: transform 1s
 
 .back-panel
 	position: absolute
 	top: 0
 	left: 0
+	
+	-webkit-transform-style: preserve-3d
+	-moz-transform-style: preserve-3d
+	-ms-transform-style: preserve-3d
 	transform-style: preserve-3d
+	
+	-webkit-backface-visibility: hidden
 	backface-visibility: hidden
+	
+	-webkit-transition: -webkit-transform 1s
 	transition: transform 1s
-	transform: rotateY(-180deg) // Ensure is initially facing away.
+	
+	-webkit-transform: rotateY(-180deg)
+	-moz-tranform: rotateY(-180deg)
+	-ms-transform: rotateY(-180deg)
+	transform: rotateY(-180deg)
 
 // End flipping animation.
 
