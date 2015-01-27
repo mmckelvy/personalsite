@@ -23,8 +23,8 @@
 			showModal(selectedModal);
 		});
 
-		$('.modal-lightbox').on('click', function (e) {
-			closeModal(e)
+		$('.modal-lightbox, .modal-close').on('click', function (e) {
+			$('.modal-wrapper').addClass('hidden-el');
 		});
 
 		/**
@@ -78,15 +78,6 @@
 		*/
 		function showModal (modalSelector) {
 			$(modalSelector).removeClass('hidden-el');
-		};
-
-		/*
-		* function: closeModal
-		* description: closes modal. 
-		* @param: section.  Passed in from event handler. 
-		*/
-		function closeModal (e) {
-			$(e.currentTarget).parent().addClass('hidden-el');
 		};
 
 		// Show about section on initial page load.
