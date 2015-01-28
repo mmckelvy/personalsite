@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 			css: {
 				expand: true, // Enable dynamic file mapping.
 				cwd: 'public/stylesheets/src', // Ensure that all source files are relative to this path.
-				src: ['**/*.styl'], // compile all stylus files in the src directory and any sub-directories of 'src'.
+				src: ['styles.styl'], // compile all stylus files in the src directory and any sub-directories of 'src'.
 				dest: 'public/stylesheets/lib', // set destination directory.
 				ext: '.css'
 			}
