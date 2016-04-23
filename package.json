@@ -3,17 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "build-css": "stylus --watch ./public/css/src/styles.styl --out ./public/css/lib ./public/css/src/styles.styl",
+    "start": "node app.js",
+    "build-start": "npm run build-css & npm run start"
   },
   "dependencies": {
     "express": "3.4.8",
     "jade": "*"
   },
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-stylus": "~0.13.2",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-concurrent": "~0.5.0",
-    "grunt-nodemon": "~0.2.1"
+    "stylus": "^0.52.4"
   }
 }

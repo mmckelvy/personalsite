@@ -1,7 +1,6 @@
 /** 
 * MIXINS
 **/
-
 /** 
 * Flexbox mixins
 **/
@@ -29,7 +28,6 @@ flexHzRight()
 flexVtCenter()
 	align-items center
 	-webkit-align-items center	
-
 
 /**
 * Grid mixins
@@ -132,3 +130,11 @@ background-linear-gradient(startPoint, startColor, startInterval, endColor, endI
 	background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
 	background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
 	background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+
+easeOutTrs(property = all, duration = 450ms, easeFn = $ease-fn, delay = 0ms)
+	transition: property duration easeFn delay
+	
+
+
+
+
