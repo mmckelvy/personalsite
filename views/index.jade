@@ -1,12 +1,11 @@
 include includes/header
-include includes/modals
 
 //- Main content
 div.main-container.margin-bottom-60
 	
 	//- Content block
 	//- ABOUT SECTION
-	div.content-block.about-section
+	div.content-block.about-section.read-max-width
 		div.content-text
 
 			h2.large-header-lite.grey me
@@ -34,11 +33,11 @@ div.main-container.margin-bottom-60
 
 	//- Content block
 	//- WORK
-	div.content-block.work-section
+	div.content-block.work-section.read-max-width
 		div.content-text
 			h2.large-header-lite.grey datascience
 			
-			div.margin-bottom-15.read-max-width
+			div.margin-bottom-15
 				span.base-text-bold Topic Miner Application 
 				span | Aggregates and curates customer reviews using <a href="https://en.wikipedia.org/wiki/Natural_language_processing" class="external-link" target="_blank">natural language processing</a> techniques and custom filters. Built the UI and the frontend server. Used JavaScript, React, Redux, Node.js, and Elasticsearch.
 
@@ -48,7 +47,7 @@ div.main-container.margin-bottom-60
 
 			h2.large-header-lite.grey fundamental elements
 
-			div.margin-bottom-15.read-max-width
+			div.margin-bottom-30.read-max-width
 				span.base-text-bold Agency website 
 				span | Custom website and integration with third party employee screening API. Designed and built the website, set up the third party integration. Used Sketch, JavaScript, jQuery, and Node.js.
 
